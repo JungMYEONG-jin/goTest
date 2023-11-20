@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-using-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "start:ts": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cross-wasm": "workspace:^"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

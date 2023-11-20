@@ -1,0 +1,4 @@
+packages:
+  - 'solutions/*'
+  - 'cross-examples/*'
+  - 'packages/*'

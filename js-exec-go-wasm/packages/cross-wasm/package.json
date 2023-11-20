@@ -1,0 +1,42 @@
+{
+  "name": "cross-wasm",
+  "version": "0.0.1",
+  "keywords": [
+    "wasm",
+    "cross-wasm",
+    "cross-platform",
+    "tinygo"
+  ],
+  "author": "riskers",
+  "license": "MIT",
+  "description": "Universal wasm for Node and Browsers. Cross platform(browser and nodejs) exec wasm file",
+  "scripts": {
+    "build": "webpack"
+  },
+  "module": "./dist/browser/esm/index.js",
+  "main": "./dist/node/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/browser/esm/index.js",
+      "main": "./dist/node/index.js",
+      "default": "./dist/node/index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./cross-wasm.wasm": "./dist/node/cross-wasm.wasm"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
