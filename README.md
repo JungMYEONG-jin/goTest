@@ -1,0 +1,2 @@
+# goTest
+go lang test
